@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8334409A1A86B8D90049A1C1 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 833440991A86B8D90049A1C1 /* APIClient.m */; };
+		833440A21A86CE660049A1C1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833440A01A86CE660049A1C1 /* HomeViewController.m */; };
+		833440A31A86CE660049A1C1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833440A11A86CE660049A1C1 /* HomeViewController.xib */; };
 		836E338D1A86B133004EF2B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E338C1A86B133004EF2B4 /* main.m */; };
 		836E33901A86B133004EF2B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E338F1A86B133004EF2B4 /* AppDelegate.m */; };
-		836E33931A86B133004EF2B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E33921A86B133004EF2B4 /* ViewController.m */; };
-		836E33961A86B133004EF2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836E33941A86B133004EF2B4 /* Main.storyboard */; };
 		836E33981A86B133004EF2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836E33971A86B133004EF2B4 /* Images.xcassets */; };
 		836E339B1A86B133004EF2B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836E33991A86B133004EF2B4 /* LaunchScreen.xib */; };
 		836E33A71A86B134004EF2B4 /* helpmehelpyouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E33A61A86B134004EF2B4 /* helpmehelpyouTests.m */; };
@@ -32,14 +32,14 @@
 		02EB57488F91C691046F0246 /* Pods-helpmehelpyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpmehelpyou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-helpmehelpyou/Pods-helpmehelpyou.debug.xcconfig"; sourceTree = "<group>"; };
 		833440981A86B8D90049A1C1 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		833440991A86B8D90049A1C1 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		8334409F1A86CE660049A1C1 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		833440A01A86CE660049A1C1 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		833440A11A86CE660049A1C1 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		836E33871A86B133004EF2B4 /* helpmehelpyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpmehelpyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E338B1A86B133004EF2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836E338C1A86B133004EF2B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		836E338E1A86B133004EF2B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		836E338F1A86B133004EF2B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		836E33911A86B133004EF2B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		836E33921A86B133004EF2B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		836E33951A86B133004EF2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		836E33971A86B133004EF2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		836E339A1A86B133004EF2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		836E33A01A86B134004EF2B4 /* helpmehelpyouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpmehelpyouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,9 +120,9 @@
 				833440971A86B80B0049A1C1 /* api */,
 				836E338E1A86B133004EF2B4 /* AppDelegate.h */,
 				836E338F1A86B133004EF2B4 /* AppDelegate.m */,
-				836E33911A86B133004EF2B4 /* ViewController.h */,
-				836E33921A86B133004EF2B4 /* ViewController.m */,
-				836E33941A86B133004EF2B4 /* Main.storyboard */,
+				8334409F1A86CE660049A1C1 /* HomeViewController.h */,
+				833440A01A86CE660049A1C1 /* HomeViewController.m */,
+				833440A11A86CE660049A1C1 /* HomeViewController.xib */,
 				836E33971A86B133004EF2B4 /* Images.xcassets */,
 				836E33991A86B133004EF2B4 /* LaunchScreen.xib */,
 				836E338A1A86B133004EF2B4 /* Supporting Files */,
@@ -238,9 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				836E33961A86B133004EF2B4 /* Main.storyboard in Resources */,
 				836E339B1A86B133004EF2B4 /* LaunchScreen.xib in Resources */,
 				836E33981A86B133004EF2B4 /* Images.xcassets in Resources */,
+				833440A31A86CE660049A1C1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,9 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				836E33931A86B133004EF2B4 /* ViewController.m in Sources */,
 				836E33901A86B133004EF2B4 /* AppDelegate.m in Sources */,
 				836E338D1A86B133004EF2B4 /* main.m in Sources */,
+				833440A21A86CE660049A1C1 /* HomeViewController.m in Sources */,
 				8334409A1A86B8D90049A1C1 /* APIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		836E33941A86B133004EF2B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				836E33951A86B133004EF2B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		836E33991A86B133004EF2B4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
