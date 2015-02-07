@@ -4,6 +4,7 @@
 target 'helpmehelpyou' do
 pod 'AFNetworking'
 pod 'Mantle'
+pod 'SAMGradientView'
 end
 
 target 'helpmehelpyouTests' do
