@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2615A5EB-C9C8-4DF1-BB35-3B7D34806922</string>
+	<key>IDESourceControlProjectName</key>
+	<string>helpmehelpyou</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CB836228F7A3C9F93D7A7E64EECC0CDA7A4FA238</key>
+		<string>github.com:vsathyan/helmehelpyou_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>helpmehelpyou.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CB836228F7A3C9F93D7A7E64EECC0CDA7A4FA238</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:vsathyan/helmehelpyou_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CB836228F7A3C9F93D7A7E64EECC0CDA7A4FA238</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CB836228F7A3C9F93D7A7E64EECC0CDA7A4FA238</string>
+			<key>IDESourceControlWCCName</key>
+			<string>helpmehelpyou</string>
+		</dict>
+	</array>
+</dict>
+</plist>
