@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8334409A1A86B8D90049A1C1 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 833440991A86B8D90049A1C1 /* APIClient.m */; };
 		836E338D1A86B133004EF2B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E338C1A86B133004EF2B4 /* main.m */; };
 		836E33901A86B133004EF2B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E338F1A86B133004EF2B4 /* AppDelegate.m */; };
 		836E33931A86B133004EF2B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E33921A86B133004EF2B4 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		836E33981A86B133004EF2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836E33971A86B133004EF2B4 /* Images.xcassets */; };
 		836E339B1A86B133004EF2B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836E33991A86B133004EF2B4 /* LaunchScreen.xib */; };
 		836E33A71A86B134004EF2B4 /* helpmehelpyouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E33A61A86B134004EF2B4 /* helpmehelpyouTests.m */; };
+		F293DD561CD9D854335C6BE5 /* libPods-helpmehelpyou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C41731D44B498CA959A71567 /* libPods-helpmehelpyou.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02EB57488F91C691046F0246 /* Pods-helpmehelpyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpmehelpyou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-helpmehelpyou/Pods-helpmehelpyou.debug.xcconfig"; sourceTree = "<group>"; };
+		833440981A86B8D90049A1C1 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		833440991A86B8D90049A1C1 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		836E33871A86B133004EF2B4 /* helpmehelpyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpmehelpyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E338B1A86B133004EF2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836E338C1A86B133004EF2B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		836E33A01A86B134004EF2B4 /* helpmehelpyouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpmehelpyouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E33A51A86B134004EF2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836E33A61A86B134004EF2B4 /* helpmehelpyouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helpmehelpyouTests.m; sourceTree = "<group>"; };
+		B57BD4DD0333364661B6D2B3 /* Pods-helpmehelpyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpmehelpyou.release.xcconfig"; path = "Pods/Target Support Files/Pods-helpmehelpyou/Pods-helpmehelpyou.release.xcconfig"; sourceTree = "<group>"; };
+		C41731D44B498CA959A71567 /* libPods-helpmehelpyou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-helpmehelpyou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F293DD561CD9D854335C6BE5 /* libPods-helpmehelpyou.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CD3B0A30086847B560136FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02EB57488F91C691046F0246 /* Pods-helpmehelpyou.debug.xcconfig */,
+				B57BD4DD0333364661B6D2B3 /* Pods-helpmehelpyou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		422614B8D46D5967423F4591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C41731D44B498CA959A71567 /* libPods-helpmehelpyou.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		833440971A86B80B0049A1C1 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				833440981A86B8D90049A1C1 /* APIClient.h */,
+				833440991A86B8D90049A1C1 /* APIClient.m */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		836E337E1A86B133004EF2B4 = {
 			isa = PBXGroup;
 			children = (
 				836E33891A86B133004EF2B4 /* helpmehelpyou */,
 				836E33A31A86B134004EF2B4 /* helpmehelpyouTests */,
 				836E33881A86B133004EF2B4 /* Products */,
+				2CD3B0A30086847B560136FE /* Pods */,
+				422614B8D46D5967423F4591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +117,7 @@
 		836E33891A86B133004EF2B4 /* helpmehelpyou */ = {
 			isa = PBXGroup;
 			children = (
+				833440971A86B80B0049A1C1 /* api */,
 				836E338E1A86B133004EF2B4 /* AppDelegate.h */,
 				836E338F1A86B133004EF2B4 /* AppDelegate.m */,
 				836E33911A86B133004EF2B4 /* ViewController.h */,
@@ -126,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 836E33AA1A86B134004EF2B4 /* Build configuration list for PBXNativeTarget "helpmehelpyou" */;
 			buildPhases = (
+				35811873A52D15E584CBC41E /* Check Pods Manifest.lock */,
 				836E33831A86B133004EF2B4 /* Sources */,
 				836E33841A86B133004EF2B4 /* Frameworks */,
 				836E33851A86B133004EF2B4 /* Resources */,
+				B5E0C13A666419BBF84EDB28 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +253,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35811873A52D15E584CBC41E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E0C13A666419BBF84EDB28 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-helpmehelpyou/Pods-helpmehelpyou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		836E33831A86B133004EF2B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -222,6 +294,7 @@
 				836E33931A86B133004EF2B4 /* ViewController.m in Sources */,
 				836E33901A86B133004EF2B4 /* AppDelegate.m in Sources */,
 				836E338D1A86B133004EF2B4 /* main.m in Sources */,
+				8334409A1A86B8D90049A1C1 /* APIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +414,7 @@
 		};
 		836E33AB1A86B134004EF2B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EB57488F91C691046F0246 /* Pods-helpmehelpyou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helpmehelpyou/Info.plist;
@@ -351,6 +425,7 @@
 		};
 		836E33AC1A86B134004EF2B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57BD4DD0333364661B6D2B3 /* Pods-helpmehelpyou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = helpmehelpyou/Info.plist;
@@ -412,6 +487,7 @@
 				836E33AC1A86B134004EF2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836E33AD1A86B134004EF2B4 /* Build configuration list for PBXNativeTarget "helpmehelpyouTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +496,7 @@
 				836E33AF1A86B134004EF2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
