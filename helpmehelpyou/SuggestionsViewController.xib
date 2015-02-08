@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuggestionsViewController">
+            <connections>
+                <outlet property="gradientView" destination="lWK-ks-euv" id="GFZ-BG-06N"/>
+                <outlet property="scrollView" destination="w0c-6b-5mH" id="SHH-u5-rvB"/>
+                <outlet property="suggestionText" destination="7l3-yy-sba" id="4Cr-2o-tTN"/>
+                <outlet property="view" destination="suk-KJ-8kl" id="Z3P-6J-rkb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="suk-KJ-8kl">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-6b-5mH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWK-ks-euv" customClass="SAMGradientView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mSm-6f-PVQ">
+                                    <rect key="frame" x="131" y="353" width="339" height="29"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="339" id="ZNJ-lL-HkM"/>
+                                        <constraint firstAttribute="height" constant="28" id="cMT-DC-eTG"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="De-stressing"/>
+                                        <segment title="Getting stuff done"/>
+                                    </segments>
+                                </segmentedControl>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgO-Gs-blF">
+                                    <rect key="frame" x="8" y="407" width="584" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="CAj-eN-9Qj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="Today I am going to take 5 deep breaths">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaM-gp-b6J">
+                                    <rect key="frame" x="8" y="445" width="584" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="lsF-10-IVd"/>
+                                    </constraints>
+                                    <state key="normal" title="Today, I'm going to call or visit my best friend.">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-Nd-9Xx">
+                                    <rect key="frame" x="8" y="483" width="584" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="mi1-6Q-Wlg"/>
+                                    </constraints>
+                                    <state key="normal" title="Today, I'm going to listen to my favorite song.">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ave-8t-D7e">
+                                    <rect key="frame" x="8" y="559" width="584" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="ZUN-16-NgB"/>
+                                    </constraints>
+                                    <state key="normal" title="Today, I'm going to play with my pet for 10min.">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dio-bo-mEP">
+                                    <rect key="frame" x="8" y="521" width="584" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Xd5-Au-aL5"/>
+                                    </constraints>
+                                    <state key="normal" title="Today, I'm going to go for a walk or exercise.">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It can be anything that helps you manage or reduce stress." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l3-yy-sba">
+                                    <rect key="frame" x="65" y="8" width="471" height="326"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="7l3-yy-sba" firstAttribute="top" secondItem="lWK-ks-euv" secondAttribute="topMargin" id="22j-Qq-7Cr"/>
+                                <constraint firstItem="1iL-Nd-9Xx" firstAttribute="top" secondItem="HaM-gp-b6J" secondAttribute="bottom" constant="8" symbolic="YES" id="36C-0h-XAV"/>
+                                <constraint firstItem="HaM-gp-b6J" firstAttribute="leading" secondItem="lWK-ks-euv" secondAttribute="leadingMargin" id="3b4-f4-YdN"/>
+                                <constraint firstItem="ave-8t-D7e" firstAttribute="trailing" secondItem="Dio-bo-mEP" secondAttribute="trailing" id="4uM-9u-NzY"/>
+                                <constraint firstItem="HaM-gp-b6J" firstAttribute="leading" secondItem="AgO-Gs-blF" secondAttribute="leading" id="Lpm-dq-5SY"/>
+                                <constraint firstItem="7l3-yy-sba" firstAttribute="leading" secondItem="lWK-ks-euv" secondAttribute="leading" constant="65" id="MRW-og-Nr7"/>
+                                <constraint firstItem="1iL-Nd-9Xx" firstAttribute="leading" secondItem="Dio-bo-mEP" secondAttribute="leading" id="Nf7-sf-vw2"/>
+                                <constraint firstItem="Dio-bo-mEP" firstAttribute="top" secondItem="1iL-Nd-9Xx" secondAttribute="bottom" constant="8" symbolic="YES" id="Sh1-cE-KiJ"/>
+                                <constraint firstItem="AgO-Gs-blF" firstAttribute="top" secondItem="mSm-6f-PVQ" secondAttribute="bottom" constant="26" id="SuR-Nq-gJH"/>
+                                <constraint firstItem="mSm-6f-PVQ" firstAttribute="top" secondItem="7l3-yy-sba" secondAttribute="bottom" constant="19" id="cwh-9b-soK"/>
+                                <constraint firstItem="mSm-6f-PVQ" firstAttribute="centerX" secondItem="AgO-Gs-blF" secondAttribute="centerX" id="fc4-dB-iqy"/>
+                                <constraint firstItem="1iL-Nd-9Xx" firstAttribute="trailing" secondItem="lWK-ks-euv" secondAttribute="trailingMargin" id="gSn-Ff-f3L"/>
+                                <constraint firstItem="ave-8t-D7e" firstAttribute="top" secondItem="Dio-bo-mEP" secondAttribute="bottom" constant="8" symbolic="YES" id="gWQ-iv-KPk"/>
+                                <constraint firstItem="HaM-gp-b6J" firstAttribute="trailing" secondItem="1iL-Nd-9Xx" secondAttribute="trailing" id="i1K-h1-42n"/>
+                                <constraint firstItem="1iL-Nd-9Xx" firstAttribute="leading" secondItem="HaM-gp-b6J" secondAttribute="leading" id="iXg-Lq-FtN"/>
+                                <constraint firstItem="AgO-Gs-blF" firstAttribute="trailing" secondItem="HaM-gp-b6J" secondAttribute="trailing" id="j1c-QT-deb"/>
+                                <constraint firstItem="ave-8t-D7e" firstAttribute="leading" secondItem="Dio-bo-mEP" secondAttribute="leading" id="jCl-EO-Ypd"/>
+                                <constraint firstItem="HaM-gp-b6J" firstAttribute="top" secondItem="AgO-Gs-blF" secondAttribute="bottom" constant="8" symbolic="YES" id="jhd-PC-QBG"/>
+                                <constraint firstAttribute="bottom" secondItem="ave-8t-D7e" secondAttribute="bottom" constant="11" id="lr3-DY-L4s"/>
+                                <constraint firstItem="1iL-Nd-9Xx" firstAttribute="trailing" secondItem="Dio-bo-mEP" secondAttribute="trailing" id="xcl-m2-ZqH"/>
+                                <constraint firstItem="7l3-yy-sba" firstAttribute="centerX" secondItem="mSm-6f-PVQ" secondAttribute="centerX" id="yuc-TW-Bec"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lWK-ks-euv" firstAttribute="top" secondItem="w0c-6b-5mH" secondAttribute="top" id="84s-DR-IJX"/>
+                        <constraint firstItem="lWK-ks-euv" firstAttribute="centerY" secondItem="w0c-6b-5mH" secondAttribute="centerY" id="KRi-38-lxL"/>
+                        <constraint firstItem="lWK-ks-euv" firstAttribute="centerX" secondItem="w0c-6b-5mH" secondAttribute="centerX" id="W9Y-QC-QMU"/>
+                        <constraint firstAttribute="trailing" secondItem="lWK-ks-euv" secondAttribute="trailing" id="hwE-2O-3yZ"/>
+                        <constraint firstAttribute="bottom" secondItem="lWK-ks-euv" secondAttribute="bottom" id="jBG-uS-MKv"/>
+                        <constraint firstItem="lWK-ks-euv" firstAttribute="leading" secondItem="w0c-6b-5mH" secondAttribute="leading" id="wbC-FS-p3F"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="w0c-6b-5mH" secondAttribute="trailing" id="Adv-kN-Qsj"/>
+                <constraint firstItem="w0c-6b-5mH" firstAttribute="top" secondItem="suk-KJ-8kl" secondAttribute="top" id="CvS-FM-Ovh"/>
+                <constraint firstItem="w0c-6b-5mH" firstAttribute="leading" secondItem="suk-KJ-8kl" secondAttribute="leading" id="WuV-fq-vX8"/>
+                <constraint firstAttribute="bottom" secondItem="w0c-6b-5mH" secondAttribute="bottom" id="wVE-ll-aVy"/>
+            </constraints>
+            <point key="canvasLocation" x="1036" y="359"/>
+        </view>
+    </objects>
+</document>
