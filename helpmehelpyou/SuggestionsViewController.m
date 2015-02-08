@@ -1,32 +1,34 @@
 //
-//  HomeViewController.m
+//  SuggestionsViewController.m
 //  helpmehelpyou
 //
 //  Created by Vineet Sathyan on 2/7/15.
 //  Copyright (c) 2015 MYH. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "SAMGradientView.h"
 #import "SuggestionsViewController.h"
+#import "SAMGradientView.h"
 
-@interface HomeViewController ()
+@interface SuggestionsViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *suggestionText;
 @property (nonatomic, weak) IBOutlet SAMGradientView *gradientView;
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
-- (IBAction)suggestButtonClicked:(id)sender;
-
 @end
 
-@implementation HomeViewController
+@implementation SuggestionsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:NO];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:198.0f/255.0f green:68.0f/255.0f  blue:252.0f/255.0f  alpha:1]];
+    self.navigationController.navigationBar.translucent = NO;
     // Do any additional setup after loading the view from its nib.
-    [self.navigationController setNavigationBarHidden:YES];
-    //SAMGradientView *gradientView = [[SAMGradientView alloc] initWithFrame:CGRectMake(0, 0, 320, 300)];
     self.gradientView.gradientColors = @[[UIColor colorWithRed:198.0f/255.0f green:68.0f/255.0f  blue:252.0f/255.0f  alpha:1] , [UIColor colorWithRed:88.0f/255.0f green:86.0f/255.0f  blue:214.0f/255.0f  alpha:1]];
-    [self.scrollView setContentSize:CGSizeMake(320, 1200)];
-    //[self.view addSubview:self.gradientView];
+    //[self.scrollView addSubview:self.gradientView];
+    
+    NSString *suggestionString= @"It can be anything that helps you manage or reduce stress. \n \n Some things can help us deal with stress we can't avoid. Other things can help us avoid stress in the first place by tacking a problem or getting stuff done. \n \n See what the community is doing. Try one of these:";
+    
+    [self.suggestionText setText:suggestionString];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,8 +46,4 @@
 }
 */
 
-- (IBAction)suggestButtonClicked:(id)sender {
-    SuggestionsViewController *suggestVC= [[SuggestionsViewController alloc] initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:suggestVC animated:YES];
-}
 @end
