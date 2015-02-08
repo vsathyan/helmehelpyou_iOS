@@ -7,6 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuggestionsViewController">
             <connections>
+                <outlet property="button1" destination="AgO-Gs-blF" id="VBo-xM-dwR"/>
+                <outlet property="button2" destination="HaM-gp-b6J" id="WYg-Tu-aOE"/>
+                <outlet property="button3" destination="1iL-Nd-9Xx" id="EYp-se-fzW"/>
+                <outlet property="button4" destination="Dio-bo-mEP" id="w3E-7d-d4S"/>
+                <outlet property="button5" destination="ave-8t-D7e" id="Bj4-Q3-kOe"/>
                 <outlet property="gradientView" destination="lWK-ks-euv" id="GFZ-BG-06N"/>
                 <outlet property="scrollView" destination="w0c-6b-5mH" id="SHH-u5-rvB"/>
                 <outlet property="suggestionText" destination="7l3-yy-sba" id="4Cr-2o-tTN"/>
@@ -34,6 +39,9 @@
                                         <segment title="De-stressing"/>
                                         <segment title="Getting stuff done"/>
                                     </segments>
+                                    <connections>
+                                        <action selector="changedSegment:" destination="-1" eventType="valueChanged" id="CMP-nE-ZUt"/>
+                                    </connections>
                                 </segmentedControl>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgO-Gs-blF">
                                     <rect key="frame" x="8" y="407" width="584" height="30"/>
@@ -45,6 +53,9 @@
                                     <state key="normal" title="Today I am going to take 5 deep breaths">
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="clickedSuggestion:" destination="-1" eventType="touchUpInside" id="3x3-So-qSA"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaM-gp-b6J">
                                     <rect key="frame" x="8" y="445" width="584" height="30"/>
@@ -56,6 +67,9 @@
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="clickedSuggestion:" destination="-1" eventType="touchUpInside" id="pR6-uX-J4b"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-Nd-9Xx">
                                     <rect key="frame" x="8" y="483" width="584" height="30"/>
@@ -67,6 +81,9 @@
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="clickedSuggestion:" destination="-1" eventType="touchUpInside" id="gig-1j-jjW"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ave-8t-D7e">
                                     <rect key="frame" x="8" y="559" width="584" height="30"/>
@@ -78,6 +95,9 @@
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="clickedSuggestion:" destination="-1" eventType="touchUpInside" id="OSQ-tw-oYs"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dio-bo-mEP">
                                     <rect key="frame" x="8" y="521" width="584" height="30"/>
@@ -89,6 +109,9 @@
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="clickedSuggestion:" destination="-1" eventType="touchUpInside" id="6cE-pJ-F1z"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It can be anything that helps you manage or reduce stress." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l3-yy-sba">
                                     <rect key="frame" x="65" y="8" width="471" height="326"/>

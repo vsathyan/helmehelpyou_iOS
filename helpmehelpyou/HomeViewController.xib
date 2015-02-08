@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="gradientView" destination="ynm-Ro-34e" id="PXj-Pn-HFS"/>
                 <outlet property="scrollView" destination="g1O-WP-fbi" id="3TP-fB-XwP"/>
+                <outlet property="textView" destination="hEw-ab-yAH" id="ePc-Yk-gXb"/>
                 <outlet property="view" destination="ekU-Wh-xaw" id="RLk-Zg-Loy"/>
             </connections>
         </placeholder>
@@ -37,7 +38,7 @@
                                     <rect key="frame" x="16" y="326" width="568" height="800"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today I want to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDJ-Cs-X6x">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today I'm going to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDJ-Cs-X6x">
                                     <rect key="frame" x="31" y="32" width="538" height="33"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
