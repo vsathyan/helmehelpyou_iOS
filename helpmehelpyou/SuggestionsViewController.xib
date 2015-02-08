@@ -37,6 +37,7 @@
                                         <segment title="De-stressing"/>
                                         <segment title="Getting stuff done"/>
                                     </segments>
+                                    <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <connections>
                                         <action selector="changedSegment:" destination="-1" eventType="valueChanged" id="CMP-nE-ZUt"/>
                                     </connections>
@@ -90,10 +91,10 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It can be anything that helps you manage or reduce stress." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7l3-yy-sba">
-                                    <rect key="frame" x="66" y="16" width="188" height="240"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AgO-Gs-blF">

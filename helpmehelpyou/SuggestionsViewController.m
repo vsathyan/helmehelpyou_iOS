@@ -33,6 +33,8 @@
 @implementation SuggestionsViewController
 
 - (void)viewDidLoad {
+    self.title = @"Examples";
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO];
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:198.0f/255.0f green:68.0f/255.0f  blue:252.0f/255.0f  alpha:1]];

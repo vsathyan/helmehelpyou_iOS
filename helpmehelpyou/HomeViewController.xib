@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
                 <outlet property="cantDoMuchButton" destination="qgG-pw-7rL" id="WPM-R0-sdj"/>
+                <outlet property="feedTableView" destination="hBg-6P-WYP" id="u5r-F0-oUK"/>
                 <outlet property="gradientView" destination="ynm-Ro-34e" id="PXj-Pn-HFS"/>
                 <outlet property="helpButton" destination="oRx-fL-jKJ" id="PSd-k9-nCz"/>
                 <outlet property="scrollView" destination="g1O-WP-fbi" id="3TP-fB-XwP"/>
@@ -35,10 +36,14 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hBg-6P-WYP">
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="175" sectionHeaderHeight="1" sectionFooterHeight="1" id="hBg-6P-WYP">
                                     <rect key="frame" x="16" y="410" width="288" height="568"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="u9j-dW-M4Z"/>
+                                        <outlet property="delegate" destination="-1" id="Vuz-p8-fYv"/>
+                                    </connections>
                                 </tableView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today I'm going to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aDJ-Cs-X6x">
                                     <rect key="frame" x="31" y="32" width="258" height="33"/>
