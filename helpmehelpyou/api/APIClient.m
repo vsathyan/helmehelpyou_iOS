@@ -8,11 +8,10 @@
 
 #import "APIClient.h"
 
-static NSString * const kGAParseAPIBaseURLString = @"";
-static NSString * const kGAFParseAPIApplicationId = @"";
-static NSString * const kGAFParseRestAPIKey = @"";
-static NSString * const kGAClientKey =
-@"";
+static NSString * const kGAParseAPIBaseURLString = @"https://help-me-help-you.herokuapp.com/";
+//static NSString * const kGAFParseAPIApplicationId = @"";
+//static NSString * const kGAFParseRestAPIKey = @"";
+//static NSString * const kGAClientKey = @"";
 
 NSString * const kGASessionToken = @"HMHYSessionToken";
 NSString * const kGAUserObject = @"HMHYUserObject";
@@ -31,23 +30,14 @@ NSString * const kGAUserObject = @"HMHYUserObject";
 
 - (void)setHeadersForRequest:(AFHTTPRequestSerializer *)serializer
 {
-    [serializer setValue:kGAFParseAPIApplicationId forHTTPHeaderField:@"X-Parse-Application-Id"];
-    [serializer setValue:kGAFParseRestAPIKey forHTTPHeaderField:@"X-Parse-REST-API-Key"];
-    [serializer setValue:kGAClientKey forHTTPHeaderField:@"X-Parse-Client-Key"];
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:kGASessionToken])
-    {
-        [serializer setValue:[[NSUserDefaults standardUserDefaults] objectForKey:kGASessionToken] forHTTPHeaderField:@"X-Parse-Session-Token"];
-    }
-    
-    [serializer setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-    [serializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"enctype"];
+    [serializer setValue:@"multipart/form-data " forHTTPHeaderField:@"Content-Type"];
 }
 
 - (id)initWithBaseURL:(NSURL *)url {
     self = [super initWithBaseURL:url];
     if (self) {
-        [self setRequestSerializer:[AFJSONRequestSerializer serializer]];
-        [self setResponseSerializer:[AFJSONResponseSerializer serializer]];
+        [self setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+        [self setResponseSerializer:[AFHTTPResponseSerializer serializer]];
         [self setHeadersForRequest:self.requestSerializer];
         self.securityPolicy.allowInvalidCertificates = YES;
     }

@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "SAMGradientView.h"
+#import "APIClient+login.h"
 
 @interface HomeViewController ()
 @property (nonatomic, weak) IBOutlet SAMGradientView *gradientView;
@@ -24,6 +25,23 @@
     self.gradientView.gradientColors = @[[UIColor colorWithRed:198.0f/255.0f green:68.0f/255.0f  blue:252.0f/255.0f  alpha:1] , [UIColor colorWithRed:88.0f/255.0f green:86.0f/255.0f  blue:214.0f/255.0f  alpha:1]];
     [self.scrollView setContentSize:CGSizeMake(320, 1200)];
     //[self.view addSubview:self.gradientView];
+    
+    NSDictionary *sampleUser = @{ @"first_name" : @"greatest" ,
+                                  @"last_name" : @"ever" ,
+                                  @"device_id" : @"6666"
+                                  };
+    
+    [APIClient getUser:@"4444" block:^(id sessionObject, NSError *error) {
+        NSLog(@"%@", sessionObject);
+    }];
+    
+    [APIClient createUser:sampleUser block:^(id sessionObject, NSError *error) {
+        if (sessionObject)
+        {
+            NSLog(@"%@", sessionObject);
+            
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

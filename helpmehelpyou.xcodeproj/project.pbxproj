@@ -10,6 +10,7 @@
 		8334409A1A86B8D90049A1C1 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 833440991A86B8D90049A1C1 /* APIClient.m */; };
 		833440A21A86CE660049A1C1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833440A01A86CE660049A1C1 /* HomeViewController.m */; };
 		833440A31A86CE660049A1C1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833440A11A86CE660049A1C1 /* HomeViewController.xib */; };
+		833440A91A86DE570049A1C1 /* APIClient+login.m in Sources */ = {isa = PBXBuildFile; fileRef = 833440A81A86DE570049A1C1 /* APIClient+login.m */; };
 		836E338D1A86B133004EF2B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E338C1A86B133004EF2B4 /* main.m */; };
 		836E33901A86B133004EF2B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 836E338F1A86B133004EF2B4 /* AppDelegate.m */; };
 		836E33981A86B133004EF2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836E33971A86B133004EF2B4 /* Images.xcassets */; };
@@ -35,6 +36,8 @@
 		8334409F1A86CE660049A1C1 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		833440A01A86CE660049A1C1 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		833440A11A86CE660049A1C1 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		833440A71A86DE570049A1C1 /* APIClient+login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "APIClient+login.h"; sourceTree = "<group>"; };
+		833440A81A86DE570049A1C1 /* APIClient+login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "APIClient+login.m"; sourceTree = "<group>"; };
 		836E33871A86B133004EF2B4 /* helpmehelpyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpmehelpyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836E338B1A86B133004EF2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836E338C1A86B133004EF2B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 			children = (
 				833440981A86B8D90049A1C1 /* APIClient.h */,
 				833440991A86B8D90049A1C1 /* APIClient.m */,
+				833440A71A86DE570049A1C1 /* APIClient+login.h */,
+				833440A81A86DE570049A1C1 /* APIClient+login.m */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833440A91A86DE570049A1C1 /* APIClient+login.m in Sources */,
 				836E33901A86B133004EF2B4 /* AppDelegate.m in Sources */,
 				836E338D1A86B133004EF2B4 /* main.m in Sources */,
 				833440A21A86CE660049A1C1 /* HomeViewController.m in Sources */,
