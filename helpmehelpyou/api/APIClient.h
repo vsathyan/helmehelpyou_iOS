@@ -13,8 +13,10 @@
 extern NSString * const kGASessionToken;
 extern NSString * const kGAUserObject;
 
-@interface APIClient : AFHTTPSessionManager
+@interface APIClient : NSObject
 
-+ (APIClient *)sharedClient;
++ (NSMutableDictionary *)getGoals;
++ (void)addGoal:(NSDictionary *)goal;
++ (void)updateGoal:(NSDictionary *)goal;
 
 @end
