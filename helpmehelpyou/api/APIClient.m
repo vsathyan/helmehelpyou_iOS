@@ -8,52 +8,43 @@
 
 #import "APIClient.h"
 
-static NSString * const kGAParseAPIBaseURLString = @"";
-static NSString * const kGAFParseAPIApplicationId = @"";
-static NSString * const kGAFParseRestAPIKey = @"";
-static NSString * const kGAClientKey =
-@"";
+static NSString * const kGAParseAPIBaseURLString = @"https://help-me-help-you.herokuapp.com/";
 
 NSString * const kGASessionToken = @"HMHYSessionToken";
 NSString * const kGAUserObject = @"HMHYUserObject";
 
 @implementation APIClient
 
-+ (APIClient *)sharedClient {
-    static APIClient *sharedClient = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedClient = [[APIClient alloc] initWithBaseURL:[NSURL URLWithString:kGAParseAPIBaseURLString]];
-    });
-    
-    return sharedClient;
++ (NSMutableDictionary *)getGoals{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSMutableDictionary *goals = [[NSMutableDictionary alloc] init];
+    [manager GET:@"https://help-me-help-you.herokuapp.com/goals.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        [goals setObject:responseObject[0][@"statement"] forKey:@"statement"];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+    return goals;
 }
 
-- (void)setHeadersForRequest:(AFHTTPRequestSerializer *)serializer
-{
-    [serializer setValue:kGAFParseAPIApplicationId forHTTPHeaderField:@"X-Parse-Application-Id"];
-    [serializer setValue:kGAFParseRestAPIKey forHTTPHeaderField:@"X-Parse-REST-API-Key"];
-    [serializer setValue:kGAClientKey forHTTPHeaderField:@"X-Parse-Client-Key"];
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:kGASessionToken])
-    {
-        [serializer setValue:[[NSUserDefaults standardUserDefaults] objectForKey:kGASessionToken] forHTTPHeaderField:@"X-Parse-Session-Token"];
-    }
-    
-    [serializer setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-    [serializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"enctype"];
++ (void)addGoal:(NSDictionary *)goal{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager POST:@"https://help-me-help-you.herokuapp.com/goals.json" parameters:goal success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
-- (id)initWithBaseURL:(NSURL *)url {
-    self = [super initWithBaseURL:url];
-    if (self) {
-        [self setRequestSerializer:[AFJSONRequestSerializer serializer]];
-        [self setResponseSerializer:[AFJSONResponseSerializer serializer]];
-        [self setHeadersForRequest:self.requestSerializer];
-        self.securityPolicy.allowInvalidCertificates = YES;
-    }
-    
-    return self;
-    
++ (void)updateGoal:(NSDictionary *)goal{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager PUT:@"https://help-me-help-you.herokuapp.com/goals/1.json" parameters:goal success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
+
+
 
 @end

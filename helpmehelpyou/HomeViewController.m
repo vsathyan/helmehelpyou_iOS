@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "SAMGradientView.h"
 #import "SuggestionsViewController.h"
+#import "APIClient.h"
 
 @interface HomeViewController () <SuggestionsDelegate>
 @property (nonatomic, weak) IBOutlet SAMGradientView *gradientView;
@@ -28,6 +29,7 @@
     //SAMGradientView *gradientView = [[SAMGradientView alloc] initWithFrame:CGRectMake(0, 0, 320, 300)];
     self.gradientView.gradientColors = @[[UIColor colorWithRed:198.0f/255.0f green:68.0f/255.0f  blue:252.0f/255.0f  alpha:1] , [UIColor colorWithRed:88.0f/255.0f green:86.0f/255.0f  blue:214.0f/255.0f  alpha:1]];
     [self.scrollView setContentSize:CGSizeMake(320, 1200)];
+    [APIClient getGoals];
 }
 
 - (void)viewWillAppear:(BOOL)animated
