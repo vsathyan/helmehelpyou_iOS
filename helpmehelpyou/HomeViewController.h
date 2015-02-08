@@ -11,5 +11,11 @@
 @interface HomeViewController : UIViewController
 
 @property (nonatomic, strong) NSString *todaysGoal;
+@property (weak, nonatomic) IBOutlet UIButton *helpButton;
+@property (weak, nonatomic) IBOutlet UIButton *cantDoMuchButton;
+@property (weak, nonatomic) IBOutlet UIButton *suggestionButton;
+
+
+- (IBAction)submitClicked:(id)sender;
 
 @end
