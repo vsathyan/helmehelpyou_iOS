@@ -10,4 +10,6 @@
 
 @interface HomeViewController : UIViewController
 
+@property (nonatomic, strong) NSString *todaysGoal;
+
 @end

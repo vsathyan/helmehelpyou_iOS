@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol SuggestionsDelegate <NSObject>
+- (void)suggested:(NSString *)suggestion;
+@end
+
 
 @interface SuggestionsViewController : UIViewController
-
+@property (nonatomic, strong) NSObject<SuggestionsDelegate> *delegate;
 @end
